@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #F6F9F9;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 500;
+}
+
+
+
+.hero {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    text-align: center;
+    position: relative;
+}
+
+.hero_content {
+    min-height: 90vh;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 72px;
+}
+
+.hero span {
+    display: block;
+    height: 1px;
+    width: 70%;
+    background: #15a4fa;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #fff;
+}
+
+.hero .hero_btn {
+    color: white;
+    border: 1px solid #15a4fa;
+    padding: 10px 20px;
+}
+
+.hero .hero_btn:hover {
+    background-color: #15a4fa;
+}
+
+.hero .hero_btn:focus {
+    box-shadow: none;
+}
+
+.hero .icon {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    animation: down_arrow 1s linear 0s infinite alternate none running;
+}
+
+
+.simple {
+    background: #F6F9F9;
+}
+
+.simple h2 {
+    color: #2d3950;
+}
+
+.simple p {
+    color: #999999;
+}
+
+
+
+.service_icon {
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(to right, rgb(72, 186, 255) 0%, rgb(72, 186, 255) 50%, rgb(95, 195, 255) 50%, rgb(95, 195, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+
+.galary {
+    background-color: #F6F9F9;
+}
+
+.galary h2 {
+    color: #2d3950;
+}
+
+.galary_item {
+    position: relative;
+}
+
+.galary_item img {
+    width: 100%;
+}
+
+.galary_item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #15a4fa;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+
+.galary_item:hover::before {
+    opacity: 0.7;
+    width: 100%;
+}
+
+.galary_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 1;
+}
+
+.galary_icon ul {
+    list-style: none;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+}
+
+.galary_icon ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.galary_item:hover .galary_icon {
+    opacity: 1;
+}
+
+.contact {
+    background-image: url(../images/contact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    color: white;
+}
+
+.contact input,
+.contact textarea {
+    background-color: transparent;
+}
+
+.form-check-input[type=checkbox] {
+    border: 1px solid white;
+}
+
+.contact .btn-custom {
+    border: 1px solid #15a4fa;
+    padding: 10px 25px;
+    color: white;
+}
+
+.contact .btn-custom:hover {
+    background-color: #15a4fa;
+}
+
+.form-control {
+    color: white;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+
+
+footer {
+    background-color: #F6F9F9;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+footer li {
+    width: 30px;
+    height: 30px;
+    background-color: #15a4fa;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+@keyframes down_arrow {
+    0% {
+        bottom: 40px;
+    }
+
+    100% {
+        bottom: 70px;
+    }
+}
